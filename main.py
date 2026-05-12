@@ -13,7 +13,15 @@ load_dotenv()
 
 
 app = FastAPI()
-app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
+
+import os
+from pathlib import Path
+
+# uploads folder illa na create pannudu
+UPLOAD_DIR = "uploads"
+os.makedirs(UPLOAD_DIR, exist_ok=True)
+
+app.mount("/uploads", StaticFiles(directory=UPLOAD_DIR), name="uploads")
 origins = ["*"]
 
 app.add_middleware(
