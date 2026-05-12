@@ -1,4 +1,0 @@
-JWT (JSON Web Token) =
- A digital ID card given by backend after login
- Frontend uses it to prove “I’m logged in” for every request
-
