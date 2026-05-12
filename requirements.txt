@@ -4,3 +4,4 @@ jinja2
 python-multipart
 mysql-connector-python
 python-dotenv
+pandas
