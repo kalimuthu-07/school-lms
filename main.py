@@ -6,6 +6,10 @@ from fastapi.middleware.cors import CORSMiddleware
 import io
 import pandas as pd
 from fastapi.staticfiles import StaticFiles
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 
 app = FastAPI()
